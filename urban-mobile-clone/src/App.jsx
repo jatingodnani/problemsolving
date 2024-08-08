@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className='bg-[#f5f5f5] w-screen min-h-screen overflow-x-hidden m-0 relative'>
-      
+      <Navbar/>
       <div className='w-full bg-white py-8 pt-20 px-6'>
         <h1 className='text-[24px] font-bold text-gray-900'>
           Salon Prime for Kids & Men
