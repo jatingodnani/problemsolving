@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'; // Ensure Tailwind is imported here
+import './App.css'; 
 import Staricon from "./assets/starsvg.svg";
 import Offer from './components/Offer';
 import Modalser from './components/Modalser';
@@ -15,9 +15,9 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className='bg-[#f5f5f5] w-screen min-h-screen overflow-auto m-0 relative'>
+    <div className='bg-[#f5f5f5] w-screen min-h-screen overflow-x-hidden m-0 relative'>
       <Navbar/>
-      <div className='w-full bg-white py-8 pt-16 px-4'>
+      <div className='w-full bg-white py-8 pt-20 px-6'>
         <h1 className='text-[24px] font-bold text-gray-900'>
           Salon Prime for Kids & Men
         </h1>
@@ -52,7 +52,7 @@ function App() {
       
     <div className='flex flex-col py-4 w-full'>
       <div className='w-full bg-white pl-4 pt-4'>
-      <h1 className='text-[20px]   font-bold capitalize'>BestSellers</h1>
+      <h1 className='text-[20px] font-bold capitalize'>BestSellers</h1>
       </div>
       {
         alldata.map((each)=><Bestseller
